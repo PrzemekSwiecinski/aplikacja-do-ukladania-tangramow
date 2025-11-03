@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.0s, color 0.0s;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Dodane */
+    transition: background-color 0.0s, color 0.0s;
+}
+
+.menu-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-list li {
+    margin: 10px;
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.0s, box-shadow 0.0s;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-button img {
+    width: 170px;
+    height: auto;
+    max-height: 170px;
+    border-radius: 8%;
+}
+
+.menu-button span {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.menu-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.switch::before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    left: 2px;
+    bottom: 1px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(20px);
+    background-color: #007BFF;
+}
+
+.dark-mode .switch {
+    background-color: #555;
+}
+
+.dark-mode .switch::before {
+    background-color: #333;
+    transform: translateX(20px);
+}
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .menu-container {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .menu-container h1 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .menu-button span {
+    color: #ffffff !important;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 45px;
+    top: 20px;
+    transition: background-color 0.0s;
+}
+
+.back-tangram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 70px;
+    top: 5px;
+    transition: background-color 0.0s;
+}
+
+.menu-tangram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 210px;
+    top: 5px;
+    transition: background-color 0.0s;
+}
+
+.next-tangram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 299px;
+    top: 5px;
+    transition: background-color 0.0s;
+}
+
+#help-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: absolute;
+    left: 434px;
+    top: 5px;
+    transition: background-color 0.0s;
+}
+
+.back-button:hover, .back-tangram-button:hover, .menu-tangram-button:hover, .next-tangram-button:hover, #help-button:hover {
+    background-color: #0056b3;
+}
